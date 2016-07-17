@@ -14,8 +14,9 @@ function bindEventListeners (square) {
 // CREATE FUNCTION makePop HERE
 function makePop (evt) {
   // evt.preventDefault()
-  console.log(evt.target.innerHTML)
-  evt.target.removeChild(evt.target.children[0])
-  console.log ("hello")
+  var par=evt.target.parentNode
+  var chld=par.firstChild
+
+  par.removeChild(chld)
   // popped()
 }

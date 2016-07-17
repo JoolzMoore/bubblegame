@@ -10,11 +10,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
- <h2>Time to burst your bubble</h2>
 <script src="bubblegame.js"></script>
+<script language="javascript" type="text/javascript">
+  function playSound(soundfile) {
+  document.getElementById("balloonSoundfx").innerHTML= "<embed src=\"Balloon-pop.mp3"
+    +soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+}
+</script>
+        <!--Soundfx in empty span-->
+  <span id="balloonSoundfx"></span>
+       <!--Soundfx is called with attribute-->
+    <a href="#" onclick="playSound('Balloon-pop.mp3');"</a>
+  <h2>Time to burst your own bubble</h2>
     <table>
       <tr>
-      <!--ROW 1-->
+
         <tr>
         <td id="1"class="bubble"><img src="images/bubble1.png" alt=""></td>
         <td id="2"class="bubble"><img src="images/bubble2.png" alt=""></td>
@@ -23,16 +33,16 @@
         </tr>
     <!--ROW 2-->
         <tr>
-        <td id="5"class="bubble"><img src="images/bubble3.png" alt=""></td>
-        <td id="6"class="bubble"><img src="images/bubble1.png" alt=""></td>
+        <td id="5"class="bubble"><img src="images/bubble5.png" alt=""></td>
+        <td id="6"class="bubble"><img src="images/bubble3.png" alt=""></td>
         <td id="7"class="bubble"><img src="images/bubble2.png" alt=""></td>
         <td id="8"class="bubble"><img src="images/bubble1.png" alt=""></td>
         </tr>
     <!--ROW 3-->
         <tr>
-        <td id="9"class="bubble"><img src="images/bubble3.png" alt=""></td>
-        <td id="10"class="bubble"><img src="images/bubble4.png" alt=""></td>
-        <td id="11"class="bubble"><img src="images/bubble1.png" alt=""></td>
+        <td id="9"class="bubble"><img src="images/bubble4.png" alt=""></td>
+        <td id="10"class="bubble"><img src="images/bubble1.png" alt=""></td>
+        <td id="11"class="bubble"><img src="images/bubble2.png" alt=""></td>
         <td id="12"class="bubble"><img src="images/bubble3.png" alt=""></td>
         </tr>
     <!--ROW 4-->
@@ -45,5 +55,5 @@
     </table>
     <div>
      <button><strong>Play <br>again?</strong></button>
-    </div>
+  </div>
 </html>
